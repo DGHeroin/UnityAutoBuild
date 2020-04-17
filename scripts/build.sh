@@ -11,8 +11,9 @@ echo "Attempting to build $project for OS X"
   -logFile $(pwd)/unity.log \
   -projectPath $(pwd) \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+  -force-free \
   -username "${USERNAME}" \
-   -password "${PASSWORD}" \
+  -password "${PASSWORD}" \
   -quit
 
 
