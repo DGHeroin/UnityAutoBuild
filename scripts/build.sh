@@ -5,9 +5,9 @@ project="UnityAutoBuild"
 
 echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -nographics \
+  -batchMode \
   -silent-crashes \
-  -logFile $(pwd)/unity.log \
+  -logfile /dev/stdout \
   -projectPath $(pwd) \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
   -force-free \
@@ -17,8 +17,8 @@ echo "Attempting to build $project for OS X"
 
 
 echo 'Logs from build'
-cat $(pwd)/unity.log
 
+ls -alh .
 
 echo 'Attempting to zip builds'
 # zip -r $(pwd)/Build/mac.zip $(pwd)/Build/osx/
