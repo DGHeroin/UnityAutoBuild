@@ -11,8 +11,6 @@ echo "Attempting to build $project for OS X"
   -projectPath $(pwd) \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
   -force-free \
-  -username "${USERNAME}" \
-  -password "${PASSWORD}" \
   -quit
 
 
