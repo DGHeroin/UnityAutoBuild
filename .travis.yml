@@ -7,3 +7,4 @@ install:
 - ./scripts/install.sh
 script:
 - ./scripts/build.sh
+- ./scripts/clean.sh
