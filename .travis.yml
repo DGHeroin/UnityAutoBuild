@@ -1,8 +1,7 @@
 language: objective-c
 osx_image: xcode11.3
 before_install:
-- chmod a+x ./scripts/install.sh
-- chmod a+x ./scripts/build.sh
+- chmod a+x ./scripts/*.sh
 install:
 - ./scripts/install.sh
 script:
