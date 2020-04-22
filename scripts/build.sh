@@ -6,13 +6,14 @@ project="UnityAutoBuild"
 echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchMode \
+  -nographics \
   -silent-crashes \
   -logfile /dev/stdout \
   -projectPath $(pwd) \
+  -username "$USERNAME" \
+  -password "$PASSWORD" \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
-  -force-free \
   -quit
-
 
 echo 'Logs from build'
 
