@@ -12,7 +12,7 @@ echo "Attempting to build $project for OS X"
   -projectPath $(pwd) \
   -username "$USERNAME" \
   -password "$PASSWORD" \
-  -serial "${SERIAL}"\
+  -serial "${SERIAL}" \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
   -quit
 
